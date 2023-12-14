@@ -260,15 +260,11 @@ J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\runtimes\win-x64
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\obj\Debug\net7.0\AuthSystem.MvcApplicationPartsAssemblyInfo.cs
-J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
-J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\MailKit.dll
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
-J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\MimeKit.dll
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\SQLitePCLRaw.core.dll
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
-J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -292,4 +288,10 @@ J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\runtimes\win-arm
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\SendGrid.dll
+J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\StarkbankEcdsa.dll
+J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\MailKit.dll
+J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\MimeKit.dll
+J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
 J:\Kaopiz - Intern\Codes\AuthSystem\AuthSystem\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll

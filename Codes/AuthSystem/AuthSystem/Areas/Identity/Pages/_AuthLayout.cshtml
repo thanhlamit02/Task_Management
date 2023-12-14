@@ -8,10 +8,14 @@
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
-                        <a class="nav-link" href="/Identity/Account/Login">Log In</a>
+                        <a class="nav-link" href="/Identity/Account/Login">
+                            Đăng nhập
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Identity/Account/Register">Register</a>
+                        <a class="nav-link" href="/Identity/Account/Register">
+                            Đăng ký
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -34,9 +38,9 @@
             $('.nav-tabs li a').each(function () {
                 const $this = $(this);
                 if (currentPage.toLowerCase().indexOf($this.attr('href').toLowerCase()) !== -1) {
-                    $this.addClass('active'); 
+                    $this.addClass('active');
                 }
-            }
+            })
         })
     </script>
 }

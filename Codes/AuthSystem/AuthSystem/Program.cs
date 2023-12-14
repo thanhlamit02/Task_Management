@@ -2,6 +2,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using AuthSystem.Data;
 using AuthSystem.Areas.Identity.Data;
+using Microsoft.Extensions.Configuration;
+using AuthSystem.Mail;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using System.Configuration;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("AuthDbContextConnection") ?? throw new InvalidOperationException("Connection string 'AuthDbContextConnection' not found.");
@@ -23,6 +29,9 @@ builder.Services.ConfigureApplicationCookie(o => {
     o.SlidingExpiration = true;
 }); //Add new service
 
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,7 +43,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
+
+
+
+IdentityUser user;
 
 app.MapControllerRoute(
     name: "default",
