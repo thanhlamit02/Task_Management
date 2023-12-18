@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "J:\\Kaopiz - Intern\\Codes\\AuthSystem\\AuthSystem\\AuthSystem.csproj": {}
+    "E:\\Downloads\\AuthSystem\\AuthSystem\\AuthSystem.csproj": {}
   },
   "projects": {
-    "J:\\Kaopiz - Intern\\Codes\\AuthSystem\\AuthSystem\\AuthSystem.csproj": {
+    "E:\\Downloads\\AuthSystem\\AuthSystem\\AuthSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "J:\\Kaopiz - Intern\\Codes\\AuthSystem\\AuthSystem\\AuthSystem.csproj",
+        "projectUniqueName": "E:\\Downloads\\AuthSystem\\AuthSystem\\AuthSystem.csproj",
         "projectName": "AuthSystem",
-        "projectPath": "J:\\Kaopiz - Intern\\Codes\\AuthSystem\\AuthSystem\\AuthSystem.csproj",
+        "projectPath": "E:\\Downloads\\AuthSystem\\AuthSystem\\AuthSystem.csproj",
         "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "J:\\Kaopiz - Intern\\Codes\\AuthSystem\\AuthSystem\\obj\\",
+        "outputPath": "E:\\Downloads\\AuthSystem\\AuthSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

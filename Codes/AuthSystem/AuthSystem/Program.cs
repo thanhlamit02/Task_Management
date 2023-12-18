@@ -6,8 +6,7 @@ using Microsoft.Extensions.Configuration;
 using AuthSystem.Mail;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using System.Configuration;
-
-
+using AuthSystem.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("AuthDbContextConnection") ?? throw new InvalidOperationException("Connection string 'AuthDbContextConnection' not found.");
@@ -15,6 +14,8 @@ var connectionString = builder.Configuration.GetConnectionString("AuthDbContextC
 builder.Services.AddDbContext<AuthDbContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<AuthDbContext>();
+
+builder.Services.AddTransient<IEmailSender, SendGridEmailSender>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
