@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AuthSystem"
+    "\\AuthSystem",
+    "\\AuthSystem\\Models",
+    "\\AuthSystem\\Services"
   ],
-  "SelectedNode": "\\AuthSystem\\appsettings.json",
+  "SelectedNode": "\\AuthSystem.sln",
   "PreviewInSolutionExplorer": false
 }

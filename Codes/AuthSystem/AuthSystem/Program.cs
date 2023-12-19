@@ -13,7 +13,10 @@ var connectionString = builder.Configuration.GetConnectionString("AuthDbContextC
 
 builder.Services.AddDbContext<AuthDbContext>(options => options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<AuthDbContext>();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddEntityFrameworkStores<AuthDbContext>()
+    .AddDefaultUI() // Add a new service
+    .AddDefaultTokenProviders(); //Add a new token provider
 
 builder.Services.AddTransient<IEmailSender, SendGridEmailSender>();
 

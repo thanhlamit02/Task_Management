@@ -9,7 +9,7 @@ using MimeKit;
 namespace AuthSystem.Mail
 {
 
-    // Cấu hình dịch vụ gửi mail, giá trị Inject từ appsettings.json
+    // Set up sending gmail service, Inject value from appsetting.json
     public class MailSettings
     {
         public string Mail { get; set; }
@@ -20,15 +20,15 @@ namespace AuthSystem.Mail
 
     }
 
-    // Dịch vụ gửi mail
+    // Sending email service
     public class SendMailService : IEmailSender
     {
         private readonly MailSettings mailSettings;
 
         private readonly ILogger<SendMailService> logger;
 
-        // mailSetting được Inject qua dịch vụ hệ thống
-        // Có inject Logger để xuất log
+        // mailSetting was injected by system services
+        // There is a Logger injector to export logs
         public SendMailService(IOptions<MailSettings> _mailSettings, ILogger<SendMailService> _logger)
         {
             mailSettings = _mailSettings.Value;
@@ -48,7 +48,7 @@ namespace AuthSystem.Mail
             builder.HtmlBody = htmlMessage;
             message.Body = builder.ToMessageBody();
 
-            // dùng SmtpClient của MailKit
+            // Using SmtpClient of MailKit
             using var smtp = new MailKit.Net.Smtp.SmtpClient();
 
             try
@@ -59,9 +59,9 @@ namespace AuthSystem.Mail
             }
             catch (Exception ex)
             {
-                // Gửi mail thất bại, nội dung email sẽ lưu vào thư mục mailssave
-                System.IO.Directory.CreateDirectory("mailssave");
-                var emailsavefile = string.Format(@"mailssave/{0}.eml", Guid.NewGuid());
+                // If sending mail is failed, the main message was saved in 'mailsSave' folder
+                System.IO.Directory.CreateDirectory("mailsSave");
+                var emailsavefile = string.Format(@"mailsSave/{0}.eml", Guid.NewGuid());
                 await message.WriteToAsync(emailsavefile);
 
                 logger.LogInformation("Lỗi gửi mail, lưu tại - " + emailsavefile);

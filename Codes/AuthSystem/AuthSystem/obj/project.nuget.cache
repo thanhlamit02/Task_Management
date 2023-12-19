@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ttZiWtNs/v7q21ni7XcqHVx8+sCFuRc8IK+BKeJG4+OJ4aW4V2Dhs0N+keYZlsotdFvTXeuZbOkD779Vb8WDvg==",
+  "dgSpecHash": "17msUtKrfv8rpiXzVI/m7e0k8ZHrmt4jm/8QKNW+e8182/x5Ec6dUGdCEfegi4zYHQqc0Vi1sEjnFyFJIYjMEg==",
   "success": true,
-  "projectFilePath": "E:\\Downloads\\AuthSystem\\AuthSystem\\AuthSystem.csproj",
+  "projectFilePath": "J:\\Kaopiz - Intern\\Codes\\AuthSystem\\AuthSystem\\AuthSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thanh\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\thanh\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

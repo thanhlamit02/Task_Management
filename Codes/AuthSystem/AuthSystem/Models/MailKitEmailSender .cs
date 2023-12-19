@@ -13,11 +13,11 @@ namespace AuthSystem.Models
     {
         public async Task SendEmailAsync(string email, string subject, string message)
         {
-            // email và password người gửi  
+            // Email and password of user who is sending mail 
             string fromMail = "thanhlam141002@gmail.com";
             string fromPassword = "qxyirpxbyrfvbwbr";
 
-            // Nội dung thư
+            // Main message
             MailMessage Message = new MailMessage();
             Message.From = new MailAddress(fromMail);
             Message.Subject = subject;
